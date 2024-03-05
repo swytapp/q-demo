@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 });
 
 app.use((req, res, next) => {
-    res.setHeader(‘Content-Encoding’, ‘gzip’);
+    res.setHeader('Content-Encoding', 'gzip');
     next();
 });
  
