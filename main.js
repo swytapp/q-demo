@@ -10,6 +10,11 @@ app.use('/Build', express.static(__dirname + '/Build'));
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/index.html'));
 });
+
+app.use((req, res, next) => {
+    res.setHeader(‘Content-Encoding’, ‘gzip’);
+    next();
+});
  
 // Start the server
 const PORT = process.env.PORT || 8080;
