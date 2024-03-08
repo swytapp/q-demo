@@ -6,6 +6,7 @@ const path = require('path');
 
 app.use('/TemplateData', express.static(__dirname + '/TemplateData'));
 app.use('/Build', express.static(__dirname + '/Build'));
+app.use('/StreamingAssets', express.static(__dirname + '/StreamingAssets'));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/index.html'));
