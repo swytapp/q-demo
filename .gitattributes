@@ -3,3 +3,4 @@ Build/web-01.data filter=lfs diff=lfs merge=lfs -text
 Build/web-01.wasm filter=lfs diff=lfs merge=lfs -text
 Build/web-01.data.unityweb filter=lfs diff=lfs merge=lfs -text
 Build/quest-pc.data.unityweb filter=lfs diff=lfs merge=lfs -text
+Build/q-pc.data.unityweb filter=lfs diff=lfs merge=lfs -text
